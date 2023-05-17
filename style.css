@@ -1,0 +1,57 @@
+#general {
+    max-width: 500px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+#area2 {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+#data {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+#division {
+    max-width: 500px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+#teamlist {
+    max-width: 500px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+#listLang {
+    max-width: 500px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.pool {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+#paste{
+    min-width: 500px;
+    min-height: 720px;
+}
+
+.info{
+    min-width: 350px;
+}
