@@ -28,7 +28,7 @@ function getStats(poke, ivs, evs, level, nat) {
 
     for (const [key, value] of Object.entries(baseStats)){
         if (key == 'hp'){
-            var stat = ((((2 * baseStats.hp) + (evs.hp/4) + ivs.hp) * level)/100) + level + 10;
+            var stat = Math.floor(((((2 * baseStats.hp) + (evs.hp/4) + ivs.hp) * level)/100) + level + 10);
             ret['hp'] = stat;
         } else {
             var stat = Math.floor(Math.floor((((((2 * baseStats[key]) + (evs[key]/4) + ivs[key]) * level) / 100) + 5)) * nature[key]);
