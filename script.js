@@ -128,12 +128,14 @@ function generatePdf(element) {
         var itemId = ItemTranslator[pokes[i].item];
         var teraTypeId = TypeTranslator[pokes[i].teraType];
 
+        var nature = 'Serious';
         if (pokes[i].nature){
-            var nature = pokes[i].nature;
+            nature = pokes[i].nature;
         }
 
+        var level = 50;
         if (pokes[i].level){
-            var level = pokes[i].level;
+            level = pokes[i].level;
         }
 
         var ivs = {'hp': 31, 'atk': 31, 'def': 31, 'spa': 31, 'spd': 31, 'spe': 31};
