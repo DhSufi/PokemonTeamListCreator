@@ -1,0 +1,346 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(Montserrat-Medium.ttf);
+}
+
+
+body{
+    background-color:  rgb(5, 6, 45);
+    color: white;
+    font-family: Montserrat;
+    font-size: 15px;
+    margin:30px;
+}
+
+#general {
+    max-width: 500px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+#area1 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    margin-top: 0px;
+    margin-left: 15px;
+}
+
+#area2 {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 15px;
+}
+
+#data {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 45px;
+}
+.bot{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.end{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+}
+
+
+.optionsContainer input[type="radio"]{
+    display: none !important;
+}
+
+.optionsContainer {
+    max-width: 500px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    background: white;
+    justify-content: space-evenly;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+#listLang.optionsContainer{
+    width: 360px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 7px;
+    align-items: stretch;
+    background: white;
+    justify-content: space-evenly;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+#division.optionsContainer{
+    width: 360px;
+}
+
+#teamlist.optionsContainer{
+    width: 360px;
+}
+
+.optionsContainer label{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.optionsContainer label .option {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+
+.optionsContainer .option .chroma{
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+    align-items: center;
+    border-radius: 5px;
+    padding: 7px;
+    background-color: rgba(5, 6, 45, 1);
+    transition: background 0.2s ease;
+}
+.optionsContainer .option .chroma:hover{
+    background-color: rgba(5, 6, 45, 0);
+}
+.optionsContainer label:hover .option .chroma span{
+    color: white;
+}
+.optionsContainer label:hover .option .chroma .dot{
+    outline: 0px;
+}
+.optionsContainer label:hover{
+    opacity: 0.7;
+}
+
+.optionsContainer .option{
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+    align-items: center;
+    border-radius: 5px;
+    padding: 2px;
+    background: linear-gradient(144deg,#AF40FF, #5B42F3 50%, #00DDEB);
+}
+
+.chroma span{
+    color: #b5b5b5;
+}
+
+.dot{
+  width: 12px;
+  height: 12px;
+  background: #0069d9;
+  border-radius: 50%;
+  outline: 6.5px solid #b5b5b5;
+  outline-offset: -6px;
+  transition: outline 0.2s ease;
+  background: white;
+}
+
+.optionsContainer label{
+    opacity: 0.3;
+    transition: opacity 0.2s ease;
+}
+
+#Junior:checked ~ label .option .chroma .dot.junior,
+#Senior:checked ~ label .option .chroma .dot.senior,
+#Master:checked ~ label .option .chroma .dot.master,
+#open:checked ~ label .option .chroma .dot.open,
+#close:checked ~ label .option .chroma .dot.close,
+#chs:checked ~ label .option .chroma .dot.chs,
+#cht:checked ~ label .option .chroma .dot.cht,
+#es:checked ~ label .option .chroma .dot.es,
+#en:checked ~ label .option .chroma .dot.en,
+#fre:checked ~ label .option .chroma .dot.fre,
+#ger:checked ~ label .option .chroma .dot.ger,
+#jpn:checked ~ label .option .chroma .dot.jpn,
+#jpnkanji:checked ~ label .option .chroma .dot.jpnkanji,
+#kor:checked ~ label .option .chroma .dot.kor,
+#ita:checked ~ label .option .chroma .dot.ita{
+    /*outline: 3px solid #00DDEB;*/
+    outline: 3px solid rgba(5, 6, 45, 1);
+    outline-offset: -6px;
+}
+
+#Junior:checked ~ label .option .chroma.junior,
+#Senior:checked ~ label .option .chroma.senior,
+#Master:checked ~ label .option .chroma.master,
+#close:checked ~ label .option .chroma.close,
+#open:checked ~ label .option .chroma.open,
+#chs:checked ~ label .option .chroma.chs,
+#cht:checked ~ label .option .chroma.cht,
+#es:checked ~ label .option .chroma.es,
+#en:checked ~ label .option .chroma.en,
+#fre:checked ~ label .option .chroma.fre,
+#ger:checked ~ label .option .chroma.ger,
+#jpn:checked ~ label .option .chroma.jpn,
+#jpnkanji:checked ~ label .option .chroma.jpnkanji,
+#kor:checked ~ label .option .chroma.kor,
+#ita:checked ~ label .option .chroma.ita{
+    background-color: rgba(5, 6, 45, 0);
+}
+
+#Junior:checked ~ label .option .chroma.junior span,
+#Senior:checked ~ label .option .chroma.senior span,
+#Master:checked ~ label .option .chroma.master span,
+#open:checked ~ label .option .chroma.open span,
+#close:checked ~ label .option .chroma.close span,
+#chs:checked ~ label .option .chroma.chs span,
+#cht:checked ~ label .option .chroma.cht span,
+#es:checked ~ label .option .chroma.es span,
+#en:checked ~ label .option .chroma.en span,
+#fre:checked ~ label .option .chroma.fre span,
+#ger:checked ~ label .option .chroma.ger span,
+#jpn:checked ~ label .option .chroma.jpn span,
+#jpnkanji:checked ~ label .option .chroma.jpnkanji span,
+#kor:checked ~ label .option .chroma.kor span,
+#ita:checked ~ label .option .chroma.ita span{
+    color: white;
+}
+
+#open:checked ~ label[for="open"],
+#close:checked ~ label[for="close"],
+#Junior:checked ~ label[for="Junior"],
+#Senior:checked ~ label[for="Senior"],
+#Master:checked ~ label[for="Master"],
+#chs:checked ~ label[for="chs"],
+#cht:checked ~ label[for="cht"],
+#es:checked ~ label[for="es"],
+#en:checked ~ label[for="en"],
+#fre:checked ~ label[for="fre"],
+#ger:checked ~ label[for="ger"],
+#jpn:checked ~ label[for="jpn"],
+#jpnkanji:checked ~ label[for="jpnkanji"],
+#kor:checked ~ label[for="kor"],
+#ita:checked ~ label[for="ita"]{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+#paste{
+    min-width: 500px;
+    min-height: 720px;
+    border-radius: 5px;
+    font-family: Montserrat;
+    padding: 5px;
+}
+
+#data input{
+    width: 500px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #b5b5b5;
+    border-width: 3px;
+    outline: 0;
+    font-size: 15pt;
+    font-weight: 500;
+    background: transparent;
+}
+
+.Dcontainer{
+    position: relative;
+}
+
+label.info{
+    position: absolute;
+    color: #9b9b9b;
+    top: 3px;
+    font-size: 15pt;
+    display: block;
+    transition: 0.2s;
+    z-index: 0;
+}
+
+
+input.info[type="text"]{
+    padding-bottom: 9px;
+}
+
+input.info{
+    position: relative;
+    text-indent: 4px;
+    text-shadow: 0px 0px 0px white;
+    color: white;
+    z-index: 1;
+}
+
+input.info:not(:placeholder-shown) ~label.info{
+    text-shadow: 0px 0px 0px #9b9b9b;
+    font-size:15px;
+    top: -22px;
+}
+
+input.info:focus ~label.info{
+    text-shadow: -1px 0px 0px #AF40FF;
+    font-size:15px;
+    top: -22px;
+    color: #AF40FF;
+}
+
+input.info:focus {
+    border-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%, #00DDEB);
+    border-image-slice: 1;
+    text-shadow: -1.25px 0px 0px white;
+}
+
+
+
+
+
+
+#print{
+    max-width: 230px;
+    min-width: 230px;
+    height: 60px;
+    border-radius: 8px;
+    border-color: #11998e;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    background: linear-gradient(144deg,#AF40FF, #5B42F3 50%, #00DDEB);
+    background-size: 200% 200%;
+    transition:  background-size 0.3s ease;
+}
+
+#print:hover {
+    background-size: 100% 100%;
+    border: none;
+}
+
+
+
+
+
+
+
+
