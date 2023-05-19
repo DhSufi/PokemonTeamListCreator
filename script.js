@@ -42,6 +42,8 @@ function getStats(poke, ivs, evs, level, nat) {
 
 function generatePdf(element) {
 
+    document.getElementById('error').innerText = '';
+
     var playerName = document.getElementById('playerName').value;
     var trainerName = document.getElementById('trainerName').value;
     var teamName = document.getElementById('teamName').value;
@@ -72,9 +74,26 @@ function generatePdf(element) {
 
     const doc = new jsPDF();
 
-    doc.addFileToVFS("customFont.ttf", multiLangFont);
-    doc.addFont('customFont.ttf', 'customFont', 'normal');
-    doc.setFont("customFont", 'normal');
+    if (chosenLang == 'Cht' || chosenLang == 'Chs') {
+        doc.addFileToVFS("customFont.ttf", fontCh);
+        doc.addFont('customFont.ttf', 'customFont', 'normal');
+        doc.setFont("customFont", 'normal');
+    }
+    else if (chosenLang == 'Jpn' || chosenLang == 'JpnKanji') {
+        doc.addFileToVFS("customFont.ttf", fontJpn);
+        doc.addFont('customFont.ttf', 'customFont', 'normal');
+        doc.setFont("customFont", 'normal');
+    }
+    else if (chosenLang == 'Kor') {
+        doc.addFileToVFS("customFont.ttf", fontKor);
+        doc.addFont('customFont.ttf', 'customFont', 'normal');
+        doc.setFont("customFont", 'normal');
+    }
+    else {
+        doc.addFileToVFS("customFont.ttf", fontLatin);
+        doc.addFont('customFont.ttf', 'customFont', 'normal');
+        doc.setFont("customFont", 'normal');
+    }
 
     doc.setFontSize(10);
     doc.text(playerName, 51, 41);
@@ -152,6 +171,11 @@ function generatePdf(element) {
             }
         }
 
+        if (!pokedex[pokes[i].name]){
+            document.getElementById('error').innerText = 'ERROR IN PASTE';
+            return;
+        }
+
         var stats = getStats(pokes[i].name, ivs, evs, level, nature);
 
         var name = window['pokes' + chosenLang][nameId];
@@ -163,7 +187,6 @@ function generatePdf(element) {
             var moveId = MoveTranslator[pokes[i].moves[x]];
             movs.push(window['moves' + chosenLang][moveId]);
         }
-
 
         doc.text(name,     textX + (i%2) * gapX, pokeY + (Math.floor(i/2)) * gapY);
         doc.text(teraType, textX + (i%2) * gapX, teraY + (Math.floor(i/2)) * gapY);
