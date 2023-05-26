@@ -152,7 +152,7 @@ function generatePdf(element) {
             nature = pokes[i].nature;
         }
 
-        var level = 50;
+        var level = 100;
         if (pokes[i].level){
             level = pokes[i].level;
         }
