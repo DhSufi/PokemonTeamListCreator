@@ -144,8 +144,12 @@ function generatePdf(element) {
 
         var nameId = PokeTranslator[pokes[i].name];
         var abilityId = AbilityTranslator[pokes[i].ability];
-        var itemId = ItemTranslator[pokes[i].item];
         var teraTypeId = TypeTranslator[pokes[i].teraType];
+
+        var itemId = 'NOITEM';
+        if (pokes[i].item){
+            itemId = ItemTranslator[pokes[i].item];
+        }
 
         var nature = 'Serious';
         if (pokes[i].nature){
@@ -181,7 +185,10 @@ function generatePdf(element) {
         var name = window['pokes' + chosenLang][nameId];
         var teraType = window['types' + chosenLang][teraTypeId];
         var ability = window['abilities' + chosenLang][abilityId];
-        var item = window['items' + chosenLang][itemId];
+        var item = 'NO ITEM';
+        if (itemId != 'NOITEM'){
+            item = window['items' + chosenLang][itemId];
+        }
         var movs = [];
         for (let x = 0; x < pokes[i].moves.length; x++){
             var moveId = MoveTranslator[pokes[i].moves[x]];
