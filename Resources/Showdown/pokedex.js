@@ -10127,6 +10127,22 @@ var pokedex = {
         "spd": 95,
         "spe": 82
     },
+    "Tatsugiri-Droopy": {
+        "hp": 68,
+        "atk": 50,
+        "def": 60,
+        "spa": 120,
+        "spd": 95,
+        "spe": 82
+    },
+    "Tatsugiri-Stretchy": {
+        "hp": 68,
+        "atk": 50,
+        "def": 60,
+        "spa": 120,
+        "spd": 95,
+        "spe": 82
+    },
     "Annihilape": {
         "hp": 110,
         "atk": 115,
