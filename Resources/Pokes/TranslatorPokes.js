@@ -1,4 +1,4 @@
-{
+var PokeTranslator = {
     "Abomasnow": "572",
     "Alomomola": "739",
     "Altaria": "422",
