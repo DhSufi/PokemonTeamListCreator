@@ -873,8 +873,8 @@ var movesEs = {
     "872": "Danza Acu\u00e1tica",
     "873": "Furia Taurina",
     "874": "Fiebre Dorada",
-    "875": "Destructor",
-    "876": "Destructor",
+    "875": "Psicohojas",
+    "876": "Hidrovapor",
     "877": "Calamidad",
     "878": "Nitrochoque",
     "879": "Electroderrape",
@@ -898,5 +898,9 @@ var movesEs = {
     "897": "Ominochoque",
     "898": "Ponzochoque",
     "899": "Pugnachoque",
-    "900": "Feerichoque"
+    "900": "Feerichoque",
+    "901": "Luna Roja",
+    "902": "Ca\u00f1\u00f3n Batidor",
+    "903": "Bomba Caramelo",
+    "904": "Garrote Liana"
 }
