@@ -286,7 +286,7 @@ var abilitiesIta = {
     "285": "Spada Nefasta",
     "286": "Amuleto Nefasto",
     "287": "Monile Nefasto",
-    "288": "Ritmo d\u2019Oricalco",
+    "288": "Ritmo d'Oricalco",
     "289": "Motore Adronico",
     "290": "Scrocco",
     "291": "Ruminante",
@@ -296,5 +296,13 @@ var abilitiesIta = {
     "295": "Mantossina",
     "296": "Codarmatura",
     "297": "Mangiaterra",
-    "298": "Micoforza"
+    "298": "Micoforza",
+    "299": "Ospitalit\u00e0",
+    "300": "Occhio Interiore",
+    "301": "Albergamemorie",
+    "302": "Albergamemorie",
+    "303": "Albergamemorie",
+    "304": "Albergamemorie",
+    "305": "Catena Tossica",
+    "306": "Sciroppo Sublime"
 }
