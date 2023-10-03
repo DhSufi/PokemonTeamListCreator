@@ -296,5 +296,13 @@ var abilitiesGer = {
     "295": "Giftbelag",
     "296": "Schweifr\u00fcstung",
     "297": "Bodenschmaus",
-    "298": "Myzelienkraft"
+    "298": "Myzelienkraft",
+    "299": "Gastlichkeit",
+    "300": "Geistiges Auge",
+    "301": "Maskenmacht",
+    "302": "Maskenmacht",
+    "303": "Maskenmacht",
+    "304": "Maskenmacht",
+    "305": "Giftkette",
+    "306": "S\u00fc\u00dfer Nektar"
 }
