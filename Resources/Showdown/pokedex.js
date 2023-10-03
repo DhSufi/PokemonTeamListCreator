@@ -6735,6 +6735,14 @@ var pokedex = {
         "spd": 71,
         "spe": 122
     },
+    "Greninja-Bond": {
+        "hp": 72,
+        "atk": 95,
+        "def": 67,
+        "spa": 103,
+        "spd": 71,
+        "spe": 122
+    },
     "Greninja-Ash": {
         "hp": 72,
         "atk": 145,
@@ -9447,6 +9455,14 @@ var pokedex = {
         "spd": 80,
         "spe": 50
     },
+    "Ursaluna-Bloodmoon": {
+        "hp": 113,
+        "atk": 70,
+        "def": 120,
+        "spa": 135,
+        "spd": 65,
+        "spe": 52
+    },
     "Basculegion": {
         "hp": 120,
         "atk": 112,
@@ -9896,7 +9912,7 @@ var pokedex = {
         "spe": 75
     },
     "Capsakid": {
-        "hp": 52,
+        "hp": 50,
         "atk": 62,
         "def": 40,
         "spa": 62,
@@ -10414,5 +10430,141 @@ var pokedex = {
         "spa": 70,
         "spd": 108,
         "spe": 104
+    },
+    "Dipplin": {
+        "hp": 80,
+        "atk": 80,
+        "def": 110,
+        "spa": 95,
+        "spd": 80,
+        "spe": 40
+    },
+    "Poltchageist": {
+        "hp": 40,
+        "atk": 45,
+        "def": 45,
+        "spa": 74,
+        "spd": 54,
+        "spe": 50
+    },
+    "Poltchageist-Artisan": {
+        "hp": 40,
+        "atk": 45,
+        "def": 45,
+        "spa": 74,
+        "spd": 54,
+        "spe": 50
+    },
+    "Sinistcha": {
+        "hp": 71,
+        "atk": 60,
+        "def": 106,
+        "spa": 121,
+        "spd": 80,
+        "spe": 70
+    },
+    "Sinistcha-Masterpiece": {
+        "hp": 71,
+        "atk": 60,
+        "def": 106,
+        "spa": 121,
+        "spd": 80,
+        "spe": 70
+    },
+    "Okidogi": {
+        "hp": 88,
+        "atk": 128,
+        "def": 115,
+        "spa": 58,
+        "spd": 86,
+        "spe": 80
+    },
+    "Munkidori": {
+        "hp": 88,
+        "atk": 75,
+        "def": 66,
+        "spa": 130,
+        "spd": 90,
+        "spe": 106
+    },
+    "Fezandipiti": {
+        "hp": 88,
+        "atk": 91,
+        "def": 82,
+        "spa": 70,
+        "spd": 125,
+        "spe": 99
+    },
+    "Ogerpon": {
+        "hp": 80,
+        "atk": 120,
+        "def": 84,
+        "spa": 60,
+        "spd": 96,
+        "spe": 110
+    },
+    "Ogerpon-Wellspring": {
+        "hp": 80,
+        "atk": 120,
+        "def": 84,
+        "spa": 60,
+        "spd": 96,
+        "spe": 110
+    },
+    "Ogerpon-Hearthflame": {
+        "hp": 80,
+        "atk": 120,
+        "def": 84,
+        "spa": 60,
+        "spd": 96,
+        "spe": 110
+    },
+    "Ogerpon-Cornerstone": {
+        "hp": 80,
+        "atk": 120,
+        "def": 84,
+        "spa": 60,
+        "spd": 96,
+        "spe": 110
+    },
+    "Ogerpon-Teal-Tera": {
+        "hp": 80,
+        "atk": 120,
+        "def": 84,
+        "spa": 60,
+        "spd": 96,
+        "spe": 110
+    },
+    "Ogerpon-Wellspring-Tera": {
+        "hp": 80,
+        "atk": 120,
+        "def": 84,
+        "spa": 60,
+        "spd": 96,
+        "spe": 110
+    },
+    "Ogerpon-Hearthflame-Tera": {
+        "hp": 80,
+        "atk": 120,
+        "def": 84,
+        "spa": 60,
+        "spd": 96,
+        "spe": 110
+    },
+    "Ogerpon-Cornerstone-Tera": {
+        "hp": 80,
+        "atk": 120,
+        "def": 84,
+        "spa": 60,
+        "spd": 96,
+        "spe": 110
+    },
+    "MissingNo.": {
+        "hp": 33,
+        "atk": 136,
+        "def": 0,
+        "spa": 6,
+        "spd": 6,
+        "spe": 29
     }
 }
