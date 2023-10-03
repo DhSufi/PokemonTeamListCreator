@@ -873,8 +873,8 @@ var movesKor = {
     "872": "\uc544\ucfe0\uc544\uc2a4\ud15d",
     "873": "\ub808\uc774\uc9d5\ubd88",
     "874": "\uace8\ub4dc\ub7ec\uc2dc",
-    "875": "\ub9c9\uce58\uae30",
-    "876": "\ub9c9\uce58\uae30",
+    "875": "\uc0ac\uc774\ucf54\ube14\ub808\uc774\ub4dc",
+    "876": "\ud558\uc774\ub4dc\ub85c\uc2a4\ud300",
     "877": "\uce74\ud0c0\uc2a4\ud2b8\ub85c\ud53c",
     "878": "\uc561\uc140\ube0c\ub808\uc774\ud06c",
     "879": "\ub77c\uc774\ud2b8\ub2dd\ub4dc\ub77c\uc774\ube0c",
@@ -898,5 +898,9 @@ var movesKor = {
     "897": "\ub2e4\ud06c\uc561\uc140",
     "898": "\ud3ec\uc774\uc98c\uc561\uc140",
     "899": "\ud30c\uc774\ud2b8\uc561\uc140",
-    "900": "\ub9e4\uc9c0\uceec\uc561\uc140"
+    "900": "\ub9e4\uc9c0\uceec\uc561\uc140",
+    "901": "\ube14\ub7ec\ub4dc\ubb38",
+    "902": "\ud718\uc801\ud718\uc801\ud3ec",
+    "903": "\uc2dc\ub7fd\ubd04",
+    "904": "\ub369\uad74\ubc29\ub9dd\uc774"
 }
