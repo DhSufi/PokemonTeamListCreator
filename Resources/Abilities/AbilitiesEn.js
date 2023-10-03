@@ -261,7 +261,7 @@ var abilitiesEn = {
     "260": "Unseen Fist",
     "261": "Curious Medicine",
     "262": "Transistor",
-    "263": "Dragon\u2019s Maw",
+    "263": "Dragon's Maw",
     "264": "Chilling Neigh",
     "265": "Grim Neigh",
     "266": "As One",
@@ -296,5 +296,13 @@ var abilitiesEn = {
     "295": "Toxic Debris",
     "296": "Armor Tail",
     "297": "Earth Eater",
-    "298": "Mycelium Might"
+    "298": "Mycelium Might",
+    "299": "Hospitality",
+    "300": "Mind's Eye",
+    "301": "Embody Aspect",
+    "302": "Embody Aspect",
+    "303": "Embody Aspect",
+    "304": "Embody Aspect",
+    "305": "Toxic Chain",
+    "306": "Supersweet Syrup"
 }
