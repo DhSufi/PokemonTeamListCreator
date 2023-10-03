@@ -296,5 +296,13 @@ var abilitiesEs = {
     "295": "Capa T\u00f3xica",
     "296": "Cola Armadura",
     "297": "Geofagia",
-    "298": "Poder F\u00fangico"
+    "298": "Poder F\u00fangico",
+    "299": "Hospitalidad",
+    "300": "Ojo Mental",
+    "301": "Evocarrecuerdos",
+    "302": "Evocarrecuerdos",
+    "303": "Evocarrecuerdos",
+    "304": "Evocarrecuerdos",
+    "305": "Cadena T\u00f3xica",
+    "306": "N\u00e9ctar Dulce"
 }
