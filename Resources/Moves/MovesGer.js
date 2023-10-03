@@ -873,8 +873,8 @@ var movesGer = {
     "872": "Wogentanz",
     "873": "Rasender Stier",
     "874": "Goldrausch",
-    "875": "Klaps",
-    "876": "Klaps",
+    "875": "Psychoschneide",
+    "876": "Hydrodampf",
     "877": "Verderben",
     "878": "Kollisionskurs",
     "879": "Blitztour",
@@ -898,5 +898,9 @@ var movesGer = {
     "897": "Finsterturbo",
     "898": "Toxiturbo",
     "899": "Raufturbo",
-    "900": "Zauberturbo"
+    "900": "Zauberturbo",
+    "901": "Blutmond",
+    "902": "Quirlschuss",
+    "903": "Sirupbombe",
+    "904": "Rankenkeule"
 }
