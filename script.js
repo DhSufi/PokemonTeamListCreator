@@ -375,10 +375,11 @@ function generatePdf(element) {
         }
 
     }
-    if (sheet == 'open') {
-        doc.save(playerID+"-OTS.pdf");
+    if (sheet == 'close') {
+        doc.save(playerId+"-staff.pdf");
     } else {
-        doc.save(playerID+"-staff.pdf");
+        doc.save(playerId+"-OTS.pdf");
+    }
 }
 
 window.generatePdf = generatePdf;
