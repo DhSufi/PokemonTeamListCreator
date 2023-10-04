@@ -375,8 +375,10 @@ function generatePdf(element) {
         }
 
     }
-
-    doc.save("SufiTest.pdf");
+    if (sheet == 'open') {
+        doc.save(playerID+"-OTS.pdf");
+    } else {
+        doc.save(playerID+"-staff.pdf");
 }
 
 window.generatePdf = generatePdf;
