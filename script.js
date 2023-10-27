@@ -2,16 +2,6 @@
 
 import { Koffing } from './koff.mjs';
 
-const urlParams = new URLSearchParams(window.location.search);
-document.getElementById('playerName').value = urlParams.get('player');
-document.getElementById('trainerName').value = urlParams.get('trainer');
-document.getElementById('teamName').value = urlParams.get('team');
-document.getElementById('switchName').value = urlParams.get('switch');
-document.getElementById('playerId').value = urlParams.get('id');
-document.getElementById('birth').value = urlParams.get('dob');
-document.getElementById(urlParams.get('age')).checked = true;
-document.getElementById(urlParams.get('lang')).checked = true;
-
 const langFiles = [
     "./Resources/Pokes/Pokes",
     "./Resources/Abilities/Abilities",
