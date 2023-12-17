@@ -10,10 +10,10 @@ document.getElementById('teamName').value = urlParams.get('team');
 document.getElementById('switchName').value = urlParams.get('switch');
 document.getElementById('playerId').value = urlParams.get('id');
 document.getElementById('birth').value = urlParams.get('dob');
-if (urlParams.get('age'){
+if (urlParams.get('age')){
     document.getElementById(urlParams.get('age')).checked = true;
 }
-if (urlParams.get('lang'){
+if (urlParams.get('lang')){
     document.getElementById(urlParams.get('lang')).checked = true;
 }
 
