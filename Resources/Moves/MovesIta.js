@@ -902,5 +902,19 @@ var movesIta = {
     "901": "Luna Rossa",
     "902": "Spruzzat\u00e8",
     "903": "Bomba Sciroppata",
-    "904": "Clava di Liane"
+    "904": "Clava di Liane",
+    "905": "Elettroraggio",
+    "906": "Teracluster",
+    "907": "Irregolaser",
+    "908": "Egida Ignea",
+    "909": "Saetta",
+    "910": "Taglio Poderoso",
+    "911": "Tachiontaglio",
+    "912": "Pressa d'Acciaio",
+    "913": "Grido del Drago",
+    "914": "Ammaliavoce",
+    "915": "Rabbia Bruciante",
+    "916": "Elettrotuffo",
+    "917": "Psicorumore",
+    "918": "Colpo di Mano"
 }

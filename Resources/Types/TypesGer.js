@@ -1,25 +1,21 @@
 var typesGer = {
-    "1": "Normal",
-    "2": "Kampf",
-    "3": "Flug",
-    "4": "Gift",
-    "5": "Boden",
-    "6": "Gestein",
-    "7": "Käfer",
-    "8": "Geist",
-    "9": "Stahl",
-    "10": "Feuer",
-    "11": "Wasser",
-    "12": "Pflanze",
-    "13": "Elektro",
-    "14": "Psycho",
-    "15": "Eis",
-    "16": "Drache",
-    "17": "Unlicht",
-    "18": "Fee"
+    "0": "Normal",
+    "1": "Kampf",
+    "2": "Flug",
+    "3": "Gift",
+    "4": "Boden",
+    "5": "Gestein",
+    "6": "K\u00e4fer",
+    "7": "Geist",
+    "8": "Stahl",
+    "9": "Feuer",
+    "10": "Wasser",
+    "11": "Pflanze",
+    "12": "Elektro",
+    "13": "Psycho",
+    "14": "Eis",
+    "15": "Drache",
+    "16": "Unlicht",
+    "17": "Fee",
+    "99": "Stellar"
 }
-
-
-
-
-

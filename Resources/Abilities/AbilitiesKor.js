@@ -304,5 +304,8 @@ var abilitiesKor = {
     "303": "\ucd08\uc0c1\ud22c\uc601",
     "304": "\ucd08\uc0c1\ud22c\uc601",
     "305": "\ub3c5\uc0ac\uc2ac",
-    "306": "\uac10\ubbf8\ub85c\uc6b4\uafc0"
+    "306": "\uac10\ubbf8\ub85c\uc6b4\uafc0",
+    "307": "\ud14c\ub77c\uccb4\uc778\uc9c0",
+    "308": "\ud14c\ub77c\uc178",
+    "309": "\uc81c\ub85c\ud3ec\ubc0d"
 }

@@ -304,5 +304,8 @@ var abilitiesFre = {
     "303": "Force M\u00e9morielle",
     "304": "Force M\u00e9morielle",
     "305": "Cha\u00eene Toxique",
-    "306": "Nectar Mielleux"
+    "306": "Nectar Mielleux",
+    "307": "T\u00e9ramorphose",
+    "308": "T\u00e9ra-Carapace",
+    "309": "T\u00e9raformation 0"
 }

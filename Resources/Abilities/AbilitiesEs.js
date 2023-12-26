@@ -304,5 +304,8 @@ var abilitiesEs = {
     "303": "Evocarrecuerdos",
     "304": "Evocarrecuerdos",
     "305": "Cadena T\u00f3xica",
-    "306": "N\u00e9ctar Dulce"
+    "306": "N\u00e9ctar Dulce",
+    "307": "Teracambio",
+    "308": "Teracaparaz\u00f3n",
+    "309": "Teraformaci\u00f3n 0"
 }

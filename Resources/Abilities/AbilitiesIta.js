@@ -304,5 +304,8 @@ var abilitiesIta = {
     "303": "Albergamemorie",
     "304": "Albergamemorie",
     "305": "Catena Tossica",
-    "306": "Sciroppo Sublime"
+    "306": "Sciroppo Sublime",
+    "307": "Teramorfosi",
+    "308": "Teraguscio",
+    "309": "Zeroformazione"
 }

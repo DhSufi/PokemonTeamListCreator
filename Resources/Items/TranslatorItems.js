@@ -239,6 +239,7 @@ var ItemTranslator = {
     "Medichamite": "665",
     "Mental Herb": "219",
     "Metagrossite": "758",
+    "Metal Alloy": "2482",
     "Metal Coat": "233",
     "Metal Powder": "257",
     "Metronome": "277",

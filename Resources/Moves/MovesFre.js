@@ -902,5 +902,19 @@ var movesFre = {
     "901": "Lune Rouge",
     "902": "Mortier Matcha",
     "903": "Bombe au Sirop",
-    "904": "Massue Liane"
+    "904": "Massue Liane",
+    "905": "Fulgurayon",
+    "906": "Pluie T\u00e9rastrale",
+    "907": "Laser Hasard",
+    "908": "Rempart Br\u00fblant",
+    "909": "Vif \u00c9clair",
+    "910": "Lame Puissante",
+    "911": "Lame Tachyonique",
+    "912": "Pression Extr\u00eame",
+    "913": "Cri Draconique",
+    "914": "Voix Envo\u00fbtante",
+    "915": "Indignition",
+    "916": "Volt Assaut",
+    "917": "Dissonance Psy",
+    "918": "Prio-Parade"
 }

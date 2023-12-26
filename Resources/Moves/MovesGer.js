@@ -902,5 +902,19 @@ var movesGer = {
     "901": "Blutmond",
     "902": "Quirlschuss",
     "903": "Sirupbombe",
-    "904": "Rankenkeule"
+    "904": "Rankenkeule",
+    "905": "Stromstrahl",
+    "906": "Tera-Sternhagel",
+    "907": "Launenlaser",
+    "908": "Flammenschild",
+    "909": "Sturmblitz",
+    "910": "Wuchtklinge",
+    "911": "Tachyon-Schnitt",
+    "912": "Stahlpresse",
+    "913": "Drachenschrei",
+    "914": "Lockstimme",
+    "915": "Frustflamme",
+    "916": "Donnersto\u00df",
+    "917": "Psychol\u00e4rm",
+    "918": "Schnellkonter"
 }

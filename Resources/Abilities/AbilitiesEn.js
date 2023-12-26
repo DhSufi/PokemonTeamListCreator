@@ -304,5 +304,8 @@ var abilitiesEn = {
     "303": "Embody Aspect",
     "304": "Embody Aspect",
     "305": "Toxic Chain",
-    "306": "Supersweet Syrup"
+    "306": "Supersweet Syrup",
+    "307": "Tera Shift",
+    "308": "Tera Shell",
+    "309": "Teraform Zero"
 }

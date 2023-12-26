@@ -902,5 +902,19 @@ var movesEs = {
     "901": "Luna Roja",
     "902": "Ca\u00f1\u00f3n Batidor",
     "903": "Bomba Caramelo",
-    "904": "Garrote Liana"
+    "904": "Garrote Liana",
+    "905": "Electrorrayo",
+    "906": "Teracl\u00faster",
+    "907": "L\u00e1ser Veleidoso",
+    "908": "Llama Protectora",
+    "909": "Rel\u00e1mpago S\u00fabito",
+    "910": "Filo Potente",
+    "911": "Tajo Taqui\u00f3n",
+    "912": "Prensa Met\u00e1lica",
+    "913": "Bramido Drag\u00f3n",
+    "914": "Canto Encantador",
+    "915": "C\u00f3lera Ardiente",
+    "916": "Plancha Voltaica",
+    "917": "Psicorruido",
+    "918": "Palma Rauda"
 }

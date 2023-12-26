@@ -1,7 +1,19 @@
 # PokemonTeamListCreator
 Creates an Open Team List/Sheet and Close Team List/Sheet from Pokémon Showdown paste
 
-Last Update July 2023:
+Update December 2023:
+- Added Pokémon from The Indigo Disk
+- Added the ability to pass URL parameters ([Thanks to Joe Zhu](https://twitter.com/joezhuu)):
+  - player
+  - trainer
+  - team
+  - switch
+  - id
+  - dob
+  - age
+  - lang
+
+Update July 2023:
 - Added Pokémon for Regulation D
 - Improved file size (about x50 less disk space)
   

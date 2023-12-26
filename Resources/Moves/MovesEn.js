@@ -902,5 +902,19 @@ var movesEn = {
     "901": "Blood Moon",
     "902": "Matcha Gotcha",
     "903": "Syrup Bomb",
-    "904": "Ivy Cudgel"
+    "904": "Ivy Cudgel",
+    "905": "Electro Shot",
+    "906": "Tera Starstorm",
+    "907": "Fickle Beam",
+    "908": "Burning Bulwark",
+    "909": "Thunderclap",
+    "910": "Mighty Cleave",
+    "911": "Tachyon Cutter",
+    "912": "Hard Press",
+    "913": "Dragon Cheer",
+    "914": "Alluring Voice",
+    "915": "Temper Flare",
+    "916": "Supercell Slam",
+    "917": "Psychic Noise",
+    "918": "Upper Hand"
 }

@@ -1,23 +1,21 @@
 var typesEs = {
-    "1": "Normal",
-    "2": "Lucha",
-    "3": "Volador",
-    "4": "Veneno",
-    "5": "Tierra",
-    "6": "Roca",
-    "7": "Bicho",
-    "8": "Fantasma",
-    "9": "Acero",
-    "10": "Fuego",
-    "11": "Agua",
-    "12": "Planta",
-    "13": "Eléctrico",
-    "14": "Psíquico",
-    "15": "Hielo",
-    "16": "Dragón",
-    "17": "Siniestro",
-    "18": "Hada"
+    "0": "Normal",
+    "1": "Lucha",
+    "2": "Volador",
+    "3": "Veneno",
+    "4": "Tierra",
+    "5": "Roca",
+    "6": "Bicho",
+    "7": "Fantasma",
+    "8": "Acero",
+    "9": "Fuego",
+    "10": "Agua",
+    "11": "Planta",
+    "12": "El\u00e9ctrico",
+    "13": "Ps\u00edquico",
+    "14": "Hielo",
+    "15": "Drag\u00f3n",
+    "16": "Siniestro",
+    "17": "Hada",
+    "99": "Astral"
 }
-
-
-

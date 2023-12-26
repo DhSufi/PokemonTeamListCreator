@@ -304,5 +304,8 @@ var abilitiesGer = {
     "303": "Maskenmacht",
     "304": "Maskenmacht",
     "305": "Giftkette",
-    "306": "S\u00fc\u00dfer Nektar"
+    "306": "S\u00fc\u00dfer Nektar",
+    "307": "Tera-Wandel",
+    "308": "Tera-Panzer",
+    "309": "Teraforming Null"
 }

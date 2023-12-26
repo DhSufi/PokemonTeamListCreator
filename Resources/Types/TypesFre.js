@@ -1,24 +1,21 @@
 var typesFre = {
-    "1": "Normal",
-    "2": "Combat",
-    "3": "Vol",
-    "4": "Poison",
-    "5": "Sol",
-    "6": "Roche",
-    "7": "Insecte",
-    "8": "Spectre",
-    "9": "Acier",
-    "10": "Feu",
-    "11": "Eau",
-    "12": "Plante",
-    "13": "Électrik",
-    "14": "Psy",
-    "15": "Glace",
-    "16": "Dragon",
-    "17": "Ténèbres",
-    "18": "Fée"
+    "0": "Normal",
+    "1": "Combat",
+    "2": "Vol",
+    "3": "Poison",
+    "4": "Sol",
+    "5": "Roche",
+    "6": "Insecte",
+    "7": "Spectre",
+    "8": "Acier",
+    "9": "Feu",
+    "10": "Eau",
+    "11": "Plante",
+    "12": "\u00c9lectrik",
+    "13": "Psy",
+    "14": "Glace",
+    "15": "Dragon",
+    "16": "T\u00e9n\u00e8bres",
+    "17": "F\u00e9e",
+    "99": "Stellaire"
 }
-
-
-
-
