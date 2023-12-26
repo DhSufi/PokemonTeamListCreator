@@ -4,14 +4,14 @@ Creates an Open Team List/Sheet and Close Team List/Sheet from Pokémon Showdown
 Update December 2023:
 - Added Pokémon from The Indigo Disk
 - Added the ability to pass URL parameters ([Thanks to Joe Zhu](https://twitter.com/joezhuu)):
-  - player
-  - trainer
-  - team
-  - switch
-  - id
-  - dob
-  - age
-  - lang
+  - player: text
+  - trainer: text
+  - team: text
+  - switch: text
+  - id: text
+  - dob: text (recommended use -)
+  - age: Junior, Senior, Master
+  - lang: chs, cht, en, es, fre, ger, ita, jpn, jpnkanji, kor
 
 Update July 2023:
 - Added Pokémon for Regulation D
