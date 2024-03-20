@@ -59,9 +59,10 @@ body{
 }
 
 
-.optionsContainer input[type="radio"]{
+.optionsContainer input {
     display: none !important;
 }
+
 
 .optionsContainer {
     max-width: 500px;
@@ -76,15 +77,13 @@ body{
 
 #listLang.optionsContainer{
     width: 360px;
-    height: 250px;
+    height: 390px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     row-gap: 7px;
     align-items: stretch;
     background: white;
-    justify-content: space-evenly;
-    padding: 7px;
     border-radius: 5px;
 }
 
@@ -93,25 +92,29 @@ body{
 }
 
 #teamlist.optionsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
     width: 360px;
 }
 
-.optionsContainer label{
+#teamlist label{
+    width: 170px;
+}
+
+.optionsContainer .option{
     display: flex;
     flex-direction: column;
     align-items: stretch;
+    border-radius: 5px;
+    padding: 2px;
+    background: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+    transition: background ease 3s;
 }
-
-.optionsContainer label .option {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-}
-
 
 .optionsContainer .option .chroma{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     column-gap: 5px;
     align-items: center;
     border-radius: 5px;
@@ -119,67 +122,31 @@ body{
     background-color: rgba(5, 6, 45, 1);
     transition: background 0.2s ease;
 }
+
 .optionsContainer .option .chroma:hover{
     background-color: rgba(5, 6, 45, 0);
 }
 .optionsContainer label:hover .option .chroma span{
     color: white;
 }
-.optionsContainer label:hover .option .chroma .dot{
-    outline: 0px;
-}
+
 .optionsContainer label:hover{
     opacity: 0.7;
 }
 
-.optionsContainer .option{
-    display: flex;
-    flex-direction: row;
-    column-gap: 5px;
-    align-items: center;
-    border-radius: 5px;
-    padding: 2px;
-    background: linear-gradient(144deg,#AF40FF, #5B42F3 50%, #00DDEB);
+.optionsContainer .option.cb{
+    background: linear-gradient(144deg, #4040ff, #0499f2 50%, #26f596);
 }
 
 .chroma span{
     color: #b5b5b5;
 }
 
-.dot{
-  width: 12px;
-  height: 12px;
-  background: #0069d9;
-  border-radius: 50%;
-  outline: 6.5px solid #b5b5b5;
-  outline-offset: -6px;
-  transition: outline 0.2s ease;
-  background: white;
-}
+
 
 .optionsContainer label{
     opacity: 0.3;
     transition: opacity 0.2s ease;
-}
-
-#Junior:checked ~ label .option .chroma .dot.junior,
-#Senior:checked ~ label .option .chroma .dot.senior,
-#Master:checked ~ label .option .chroma .dot.master,
-#open:checked ~ label .option .chroma .dot.open,
-#close:checked ~ label .option .chroma .dot.close,
-#chs:checked ~ label .option .chroma .dot.chs,
-#cht:checked ~ label .option .chroma .dot.cht,
-#es:checked ~ label .option .chroma .dot.es,
-#en:checked ~ label .option .chroma .dot.en,
-#fre:checked ~ label .option .chroma .dot.fre,
-#ger:checked ~ label .option .chroma .dot.ger,
-#jpn:checked ~ label .option .chroma .dot.jpn,
-#jpnkanji:checked ~ label .option .chroma .dot.jpnkanji,
-#kor:checked ~ label .option .chroma .dot.kor,
-#ita:checked ~ label .option .chroma .dot.ita{
-    /*outline: 3px solid #00DDEB;*/
-    outline: 3px solid rgba(5, 6, 45, 1);
-    outline-offset: -6px;
 }
 
 #Junior:checked ~ label .option .chroma.junior,
@@ -187,6 +154,8 @@ body{
 #Master:checked ~ label .option .chroma.master,
 #close:checked ~ label .option .chroma.close,
 #open:checked ~ label .option .chroma.open,
+#reg:checked ~ label .option .chroma.reg,
+#sprites:checked ~ label .option .chroma.sprites,
 #chs:checked ~ label .option .chroma.chs,
 #cht:checked ~ label .option .chroma.cht,
 #es:checked ~ label .option .chroma.es,
@@ -194,7 +163,6 @@ body{
 #fre:checked ~ label .option .chroma.fre,
 #ger:checked ~ label .option .chroma.ger,
 #jpn:checked ~ label .option .chroma.jpn,
-#jpnkanji:checked ~ label .option .chroma.jpnkanji,
 #kor:checked ~ label .option .chroma.kor,
 #ita:checked ~ label .option .chroma.ita{
     background-color: rgba(5, 6, 45, 0);
@@ -205,6 +173,8 @@ body{
 #Master:checked ~ label .option .chroma.master span,
 #open:checked ~ label .option .chroma.open span,
 #close:checked ~ label .option .chroma.close span,
+#reg:checked ~ label .option .chroma.reg span,
+#sprites:checked ~ label .option .chroma.sprites span,
 #chs:checked ~ label .option .chroma.chs span,
 #cht:checked ~ label .option .chroma.cht span,
 #es:checked ~ label .option .chroma.es span,
@@ -212,7 +182,6 @@ body{
 #fre:checked ~ label .option .chroma.fre span,
 #ger:checked ~ label .option .chroma.ger span,
 #jpn:checked ~ label .option .chroma.jpn span,
-#jpnkanji:checked ~ label .option .chroma.jpnkanji span,
 #kor:checked ~ label .option .chroma.kor span,
 #ita:checked ~ label .option .chroma.ita span{
     color: white;
@@ -220,6 +189,8 @@ body{
 
 #open:checked ~ label[for="open"],
 #close:checked ~ label[for="close"],
+#reg:checked ~ label[for="reg"],
+#sprites:checked ~ label[for="sprites"],
 #Junior:checked ~ label[for="Junior"],
 #Senior:checked ~ label[for="Senior"],
 #Master:checked ~ label[for="Master"],
@@ -230,7 +201,6 @@ body{
 #fre:checked ~ label[for="fre"],
 #ger:checked ~ label[for="ger"],
 #jpn:checked ~ label[for="jpn"],
-#jpnkanji:checked ~ label[for="jpnkanji"],
 #kor:checked ~ label[for="kor"],
 #ita:checked ~ label[for="ita"]{
     opacity: 1;

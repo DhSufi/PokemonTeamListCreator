@@ -54,7 +54,6 @@
                 <label for="Junior">
                     <span class="option">
                         <span class="chroma junior">
-                            <span class="dot junior"></span>
                             <span>Junior</span>
                         </span>
                     </span>
@@ -64,7 +63,6 @@
                 <label for="Senior">
                     <span class="option">
                         <span class="chroma senior">
-                            <span class="dot senior"></span>
                             <span>Senior</span>
                         </span>
                     </span>
@@ -73,7 +71,6 @@
                 <label for="Master">
                     <span class="option">
                         <span class="chroma master">
-                            <span class="dot master"></span>
                             <span>Master</span>
                         </span>
                     </span>
@@ -84,11 +81,13 @@
 
                 <input type="radio" id="open" name="sheet" value="open" checked>
                 <input type="radio" id="close" name="sheet" value="close">
+                <input type="radio" id="reg" name="sheet" value="reg">
+                <input type="radio" id="sprites" name="sheet" value="sprites">
 
                 <label for="open">
                     <span class="option">
                         <span class="chroma open">
-                            <span class="dot open"></span>
+
                             <span>Open Team List</span>
                         </span>
                     </span>
@@ -97,8 +96,23 @@
                 <label for="close">
                     <span class="option">
                         <span class="chroma close">
-                            <span class="dot close"></span>
                             <span>Staff Team List</span>
+                        </span>
+                    </span>
+                </label>
+
+<!--                <label for="sprites">-->
+<!--                    <span class="option">-->
+<!--                        <span class="chroma sprites">-->
+<!--                            <span>Open TL Sprites</span>-->
+<!--                        </span>-->
+<!--                    </span>-->
+<!--                </label>-->
+
+                <label for="reg">
+                    <span class="option">
+                        <span class="chroma reg">
+                            <span>Multi Language List</span>
                         </span>
                     </span>
                 </label>
@@ -115,13 +129,11 @@
                 <input type="radio" id="ger" name="radioLang" value="Ger">
                 <input type="radio" id="ita" name="radioLang" value="Ita">
                 <input type="radio" id="jpn" name="radioLang" value="Jpn">
-                <input type="radio" id="jpnkanji" name="radioLang" value="JpnKanji">
                 <input type="radio" id="kor" name="radioLang" value="Kor">
 
                 <label for="cht">
                     <span class="option">
                         <span class="chroma cht">
-                            <span class="dot cht"></span>
                             <span>Traditional Chinese</span>
                         </span>
                     </span>
@@ -130,7 +142,6 @@
                 <label for="chs">
                     <span class="option">
                         <span class="chroma chs">
-                            <span class="dot chs"></span>
                             <span>Simplified Chinese</span>
                         </span>
                     </span>
@@ -139,7 +150,6 @@
                 <label for="en">
                     <span class="option">
                         <span class="chroma en">
-                            <span class="dot en"></span>
                             <span>English</span>
                         </span>
                     </span>
@@ -148,7 +158,6 @@
                 <label for="es">
                     <span class="option">
                         <span class="chroma es">
-                            <span class="dot es"></span>
                             <span>Spanish</span>
                         </span>
                     </span>
@@ -157,7 +166,6 @@
                 <label for="fre">
                     <span class="option">
                         <span class="chroma fre">
-                            <span class="dot fre"></span>
                             <span>French</span>
                         </span>
                     </span>
@@ -166,7 +174,6 @@
                 <label for="ger">
                     <span class="option">
                         <span class="chroma ger">
-                            <span class="dot ger"></span>
                             <span>German</span>
                         </span>
                     </span>
@@ -175,7 +182,6 @@
                 <label for="ita">
                     <span class="option">
                         <span class="chroma ita">
-                            <span class="dot ita"></span>
                             <span>Italian</span>
                         </span>
                     </span>
@@ -184,17 +190,7 @@
                 <label for="jpn">
                     <span class="option">
                         <span class="chroma jpn">
-                            <span class="dot jpn"></span>
                             <span>Japanese</span>
-                        </span>
-                    </span>
-                </label>
-
-                <label for="jpnkanji">
-                    <span class="option">
-                        <span class="chroma jpnkanji">
-                            <span class="dot jpnkanji"></span>
-                            <span>Japanese Kanji</span>
                         </span>
                     </span>
                 </label>
@@ -202,18 +198,18 @@
                 <label for="kor">
                     <span class="option">
                         <span class="chroma kor">
-                            <span class="dot kor"></span>
                             <span>Korean</span>
                         </span>
                     </span>
                 </label>
 
             </div>
+
         </div>
 
         <div class="end">
 
-            <button id="print" onclick="generatePdf(this)">PRINT SELECTED</button>
+            <button id="print">PRINT SELECTED</button>
             <h5 id="error"> </h5>
 
         </div>
