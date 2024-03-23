@@ -96,6 +96,7 @@ function sheetChange(event) {
 }
 
 
+
 function generatePdf(element) {
 
     document.getElementById('error').innerText = '';
@@ -457,7 +458,7 @@ function generatePdf(element) {
 
     if (sheet == 'reg') {
 
-        /*var startX = 10;
+        var startX = 10;
         var startY = 35;
         var colGap = (210 - 2*startX)/6;
         var langGap = (297-startY) / chosenLang.length;
@@ -475,206 +476,8 @@ function generatePdf(element) {
 
         for (let i = 0; i<6; i++) {
             doc.text(startX+32*i, startY+25, "espechan");
-        }*/
-
-        var pokes = parsedTeam.teams[0].pokemon;
-        doc.addFileToVFS("customFont.ttf", fontLatin);
-        doc.addFont('customFont.ttf', 'customFont', 'normal');
-        doc.setFont("customFont", 'normal');
-
-        doc.addFileToVFS("customFont.ttf", fontJpn);
-        doc.addFont('customFont.ttf', 'customFont', 'normal');
-        doc.setFont("customFont", 'normal');
-
-        doc.addFileToVFS("customFont.ttf", fontKor);
-        doc.addFont('customFont.ttf', 'customFont', 'normal');
-        doc.setFont("customFont", 'normal');
-
-        const canvas = document.createElement('canvas');
-        canvas.width = 100;
-        canvas.height = 100;
-        const ctx = canvas.getContext('2d');
-        ctx.fillStyle = 'black';
-        ctx.fillRect(0, 0, 100, 100);
-        const line = canvas.toDataURL();
-
-        doc.setFontSize(14);
-        doc.text(playerName+" - "+trainerName, 20, 8, 'left');
-        doc.text(ageDivision.id, 199, 11, 'right');
-
-        let c_width=190/7;
-        const ygap=3.8;
-        const ystart_l=15;
-
-        for (let j=0;j<9;j++) {
-
-
-            doc.addImage({imageData:line, format:'png', x:9, y:ystart_l+j*8*ygap, width:190, height:0.4});
-
-            for (let i=0;i<7;i++) {
-                doc.addImage({imageData:line, format:'png', x:9, y:ystart_l+(i+1)*ygap+j*8*ygap, width:190, height:0.1});
-            }
-        }
-        doc.addImage({imageData:line, format:'png', x:9, y:ystart_l+72*ygap, width:190, height:0.5});
-        for (let i=0;i<8;i++) {
-            doc.addImage({imageData:line, format:'png', x:9+c_width*i, y:15, width:0.1, height:273.6});
         }
 
-        const gui = {
-            "En": {
-                "item": " Held Item",
-                "ability": "Ability",
-                "teratype": "Teratype",
-                "lg":"EN",
-                "move":"Move"
-            },
-            "Es": {
-                "item": "Objeto equipado",
-                "ability": "Habilidad",
-                "teratype": "Teratipo",
-                "lg":"ES",
-                "move":"Movimento"
-            },
-            "Ita": {
-                "item": "Strumento tenuto",
-                "ability": "Abilit\u00e0",
-                "teratype": "Teratipo",
-                "lg":"IT",
-                "move":"Mossa"
-            },
-            "Ger": {
-                "item": "Getragenes Item",
-                "ability": "F\u00e4higkeit",
-                "teratype": "Tera-Typ",
-                "lg":"DE",
-                "move":"Attacke"
-            },
-            "Fre": {
-                "item": "Objet tenu",
-                "ability": "Talent",
-                "teratype": "Type T\u00e9racristal",
-                "lg":"FR",
-                "move":"Capacit\u00e9"
-            },
-            "Jpn":{
-                "item":"\u3082\u3061\u3082\u306e",
-                "ability": "\u9053\u5177",
-                "teratype":"\u30c6\u30e9\u30bf\u30a4\u30d7",
-                "lg":"JP",
-                "move":"\u30ef\u30b6"
-            },
-            "Kor":{
-                "item": "\uc544\uc774\ud15c",
-                "ability": "\ud2b9\uc131",
-                "teratype": "\ud14c\ub77c\uc2a4\ud0c8\ud0c0\uc785",
-                "lg":"KO",
-                "move":"\uae00\uc218"
-            },
-            "Chs":{
-                "item": "\u6301\u6709\u7269\u54c1",
-                "ability": "\u80fd\u529b",
-                "teratype": "\u592a\u62c9\u578b",
-                "lg":"SC",
-                "move":"\u52a8\u4f5c"
-            },
-            "Cht":{
-                "item": "\u6301\u6709\u7269\u54c1",
-                "ability": "\u80fd\u529b",
-                "teratype": "\u592a\u62c9\u578b",
-                "lg":"TC",
-                "move":"\u52d5\u4f5c"
-            }
-        }
-
-       var langValues= [];
-       for (let i = 0; i < chosenLang.length; i++) {
-        langValues.push(chosenLang[i].value);
-       }
-
-        var langcheck = ["En","Fre","Ita","Ger","Es","Jpn","Kor","Chs","Cht"];
-        for (let u = 0; u < langcheck.length; u++) {
-
-            var currentLang = langcheck[u];
-
-            if (langValues.includes(currentLang)) {
-
-                if (currentLang == "Chs" || currentLang == "Cht" || currentLang == "Jpn") {
-                    doc.addFileToVFS("customFont.ttf", fontCh);
-                    doc.addFont('customFont.ttf', 'customFont', 'normal');
-                    doc.setFont("customFont", 'normal');
-                }
-                else if (currentLang == "Kor") {
-                    doc.addFileToVFS("customFont.ttf", fontKor);
-                    doc.addFont('customFont.ttf', 'customFont', 'normal');
-                    doc.setFont("customFont", 'normal');
-                }
-
-
-                const ystart=18.6;
-                doc.setFontSize(10);
-                doc.text(gui[currentLang]["lg"], 10, ystart+ygap*8*u, 'left');
-                doc.text("Pok\u00e9mon", 24, ystart+ygap*8*u, 'center');
-                doc.text(gui[currentLang]["teratype"], 22, ystart+ygap+ygap*8*u, 'center');
-                doc.text(gui[currentLang]["ability"], 22, ystart+ygap*2+ygap*8*u, 'center');
-                doc.setFontSize(9);
-                doc.text(gui[currentLang]['item'], 22, ystart+ygap*3+ygap*8*u,"center");
-                doc.setFontSize(10);
-                doc.text(gui[currentLang]['move']+" 1", 22, ystart+ygap*4+ygap*8*u,"center");
-                doc.text(gui[currentLang]['move']+" 2", 22, ystart+ygap*5+ygap*8*u,"center");
-                doc.text(gui[currentLang]['move']+" 3", 22, ystart+ygap*6+ygap*8*u,"center");
-                doc.text(gui[currentLang]['move']+" 4", 22, ystart+ygap*7+ygap*8*u,"center");
-                doc.setFont("customFont", 'normal');
-
-
-                for (let i = 0; i < pokes.length; i++) {
-                    var id = PokeTranslator[pokes[i].name];
-                    var pokeFontSize=10;
-                    var pokeTextWidth= doc.getStringUnitWidth(window['pokes' + currentLang][id])*10;
-                    while (pokeTextWidth>80) {
-                        pokeFontSize-=0.5;
-                        doc.setFontSize(pokeFontSize);
-                        pokeTextWidth= doc.getStringUnitWidth(window['pokes' + currentLang][id])*pokeFontSize;
-                    }
-                    doc.text(window['pokes' + currentLang][id], 22+c_width*(i+1), ystart+8*ygap*u,"center");
-                    doc.setFontSize(10);
-                    id = TypeTranslator[pokes[i].teraType];
-                    doc.text(window['types' + currentLang][id], 22+c_width*(i+1), ystart+ygap+8*ygap*u,"center");
-                    id = AbilityTranslator[pokes[i].ability];
-                    var abilityFontSize=10;
-                    var abilityTextWidth= doc.getStringUnitWidth(window['abilities' + currentLang][id])*10;
-                    while (abilityTextWidth>78) {
-                        abilityFontSize-=0.5;
-                        doc.setFontSize(abilityFontSize);
-                        abilityTextWidth= doc.getStringUnitWidth(window['abilities' + currentLang][id])*abilityFontSize;
-                    }
-                    doc.text(window['abilities' + currentLang][id], 22+c_width*(i+1), ystart+2*ygap+8*ygap*u,"center");
-                    doc.setFontSize(10);
-                    id = ItemTranslator[pokes[i].item];
-                    var itemFontSize=10;
-                    var itemTextWidth= doc.getStringUnitWidth(window['items' + currentLang][id])*10;
-                    while (itemTextWidth>78) {
-                        itemFontSize-=0.5;
-                        doc.setFontSize(itemFontSize);
-                        itemTextWidth= doc.getStringUnitWidth(window['items' + currentLang][id])*itemFontSize;
-                    }
-                    doc.text(window['items' + currentLang][id], 22+c_width*(i+1), ystart+3*ygap+8*ygap*u,"center");
-                    doc.setFontSize(10);
-                    for (let x = 0; x < pokes[i].moves.length; x++){
-                        var moveId = MoveTranslator[pokes[i].moves[x]];
-                        var moveFontSize=10;
-                        var moveTextWidth= doc.getStringUnitWidth(window['moves' + currentLang][moveId])*10;
-                        while (moveTextWidth>78) {
-                            moveFontSize-=0.5;
-                            doc.setFontSize(moveFontSize);
-                            moveTextWidth= doc.getStringUnitWidth(window['moves' + currentLang][moveId])*moveFontSize;
-                        }
-                        doc.text(window['moves' + currentLang][moveId], 22+c_width*(i+1), ystart+4*ygap+30.4*u+ygap*x,"center");
-                        doc.setFontSize(10);
-                    }
-
-                }
-            }
-        }
 
 
         doc.save(playerId+"-reg.pdf");
