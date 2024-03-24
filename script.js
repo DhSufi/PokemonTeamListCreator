@@ -96,6 +96,7 @@ function sheetChange(event) {
 }
 
 
+
 function generatePdf(element) {
 
     document.getElementById('error').innerText = '';
@@ -360,6 +361,22 @@ function generatePdf(element) {
                 doc.setFont("customFont", 'normal');
                 doc.text(movs[j], textX + (i%2) * gapX, moveY + (Math.floor(i/2)) * gapY + j * moveGapY);
             }
+
+
+
+            if (sheet == "close") {
+                console.log(pokes[i].name, ivs, evs, level, nature, i);
+                var stats = getStats(pokes[i].name, ivs, evs, level, nature);
+
+                doc.text(level.toString(), statX + (i%2) * (gapX-1), levelY + (Math.floor(i/2)) * gapY, 'right');
+
+                var j = 0;
+                for (const [key, value] of Object.entries(stats)){
+                    doc.text(value.toString(), statX + (i%2) * (gapX-1), statY + (Math.floor(i/2)) * gapY + j * statGapY, 'right');
+
+                    j = j + 1;
+                }
+            }
         }
     }
 
@@ -437,19 +454,6 @@ function generatePdf(element) {
         doc.setFontSize(11);
         doc.setFont("customFont", 'normal');
 
-        for (let i = 0; i < pokes.length; i++) {
-
-            var stats = getStats(pokes[i].name, ivs, evs, level, nature);
-
-            doc.text(level.toString(), statX + (i%2) * (gapX-1), levelY + (Math.floor(i/2)) * gapY, 'right');
-
-            var j = 0;
-            for (const [key, value] of Object.entries(stats)){
-                doc.text(value.toString(), statX + (i%2) * (gapX-1), statY + (Math.floor(i/2)) * gapY + j * statGapY, 'right');
-
-                j = j + 1;
-            }
-        }
 
         doc.save(playerId+"-staff.pdf");
 
