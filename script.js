@@ -440,7 +440,7 @@ function generatePdf(element) {
 
         for (let i = 0; i < pokes.length; i++) {
 
-            var stats = getStats(pokes[i].name, ivs, evs, level, nature);
+            var stats = getStats(pokes[i].name, pokes[i].ivs, pokes[i].evs, pokes[i].level, pokes[i].nature);
 
             doc.text(level.toString(), statX + (i%2) * (gapX-1), levelY + (Math.floor(i/2)) * gapY, 'right');
 
