@@ -1,6 +1,9 @@
 # PokemonTeamListCreator
 Creates an Open Team List/Sheet and Close Team List/Sheet from Pokémon Showdown paste
 
+Update March 2024
+- Added multi language list. Thanks a lot to Aurélien Soula (Axior)
+
 Update December 2023:
 - Added Pokémon from The Indigo Disk
 - Added the ability to pass URL parameters ([Thanks to Joe Zhu](https://twitter.com/joezhuu)):
