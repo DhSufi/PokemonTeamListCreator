@@ -361,19 +361,18 @@ function generatePdf(element) {
                 doc.setFont("customFont", 'normal');
                 doc.text(movs[j], textX + (i%2) * gapX, moveY + (Math.floor(i/2)) * gapY + j * moveGapY);
             }
-
-
+            
+            
 
             if (sheet == "close") {
-                console.log(pokes[i].name, ivs, evs, level, nature, i);
                 var stats = getStats(pokes[i].name, ivs, evs, level, nature);
-
+    
                 doc.text(level.toString(), statX + (i%2) * (gapX-1), levelY + (Math.floor(i/2)) * gapY, 'right');
-
+    
                 var j = 0;
                 for (const [key, value] of Object.entries(stats)){
                     doc.text(value.toString(), statX + (i%2) * (gapX-1), statY + (Math.floor(i/2)) * gapY + j * statGapY, 'right');
-
+    
                     j = j + 1;
                 }
             }
@@ -480,7 +479,7 @@ function generatePdf(element) {
         for (let i = 0; i<6; i++) {
             doc.text(startX+32*i, startY+25, "espechan");
         }*/
-
+        
         var pokes = parsedTeam.teams[0].pokemon;
         doc.addFileToVFS("customFont.ttf", fontLatin);
         doc.addFont('customFont.ttf', 'customFont', 'normal');
@@ -493,7 +492,7 @@ function generatePdf(element) {
         doc.addFileToVFS("customFont.ttf", fontKor);
         doc.addFont('customFont.ttf', 'customFont', 'normal');
         doc.setFont("customFont", 'normal');
-
+        
         const canvas = document.createElement('canvas');
         canvas.width = 100;
         canvas.height = 100;
@@ -509,17 +508,37 @@ function generatePdf(element) {
         let c_width=190/7;
         const ygap=3.8;
         const ystart_l=15;
+        
+        var langValues= [];
+        for (let i = 0; i < chosenLang.length; i++) {
+         langValues.push(chosenLang[i].value);
+        }
+        var langcheck = ["En","Fre","Ita","Ger","Es","Jpn","Kor","Chs","Cht"];
 
+        
+        for (let r = 0; r < langcheck.length; r++) {
+            if (langValues.includes(langcheck[r])) {
+                doc.setFillColor('#D3D3D3');
+                doc.rect(9,ystart_l+ygap*(8*r),190,ygap,"F");
+                doc.setFillColor('#F0F0F0');
+                for (let l = 1; l < 4; l++) {
+                    doc.rect(9,ystart_l+ygap*(8*r+2*l),190,ygap,"F");
+                }
+                
+            }
+        }
+
+        doc.setFillColor('#000000');
         for (let j=0;j<9;j++) {
 
-
-            doc.addImage({imageData:line, format:'png', x:9, y:ystart_l+j*8*ygap, width:190, height:0.4});
+            
+            doc.addImage({imageData:line, format:'png', x:9, y:ystart_l+j*8*ygap, width:190, height:0.3});
 
             for (let i=0;i<7;i++) {
                 doc.addImage({imageData:line, format:'png', x:9, y:ystart_l+(i+1)*ygap+j*8*ygap, width:190, height:0.1});
             }
         }
-        doc.addImage({imageData:line, format:'png', x:9, y:ystart_l+72*ygap, width:190, height:0.5});
+        doc.addImage({imageData:line, format:'png', x:9, y:ystart_l+72*ygap, width:190, height:0.4});
         for (let i=0;i<8;i++) {
             doc.addImage({imageData:line, format:'png', x:9+c_width*i, y:15, width:0.1, height:273.6});
         }
@@ -579,7 +598,7 @@ function generatePdf(element) {
                 "ability": "\u80fd\u529b",
                 "teratype": "\u592a\u62c9\u578b",
                 "lg":"SC",
-                "move":"\u52a8\u4f5c"
+                "move":"\u52a8\u4f5c" 
             },
             "Cht":{
                 "item": "\u6301\u6709\u7269\u54c1",
@@ -590,18 +609,12 @@ function generatePdf(element) {
             }
         }
 
-       var langValues= [];
-       for (let i = 0; i < chosenLang.length; i++) {
-        langValues.push(chosenLang[i].value);
-       }
-
-        var langcheck = ["En","Fre","Ita","Ger","Es","Jpn","Kor","Chs","Cht"];
         for (let u = 0; u < langcheck.length; u++) {
-
+            
             var currentLang = langcheck[u];
-
+ 
             if (langValues.includes(currentLang)) {
-
+    
                 if (currentLang == "Chs" || currentLang == "Cht" || currentLang == "Jpn") {
                     doc.addFileToVFS("customFont.ttf", fontCh);
                     doc.addFont('customFont.ttf', 'customFont', 'normal');
@@ -612,70 +625,85 @@ function generatePdf(element) {
                     doc.addFont('customFont.ttf', 'customFont', 'normal');
                     doc.setFont("customFont", 'normal');
                 }
+             
+                
+                const ystart=18.1;
+                var startFontSize=9;
+                if (u>=5) {
+                    startFontSize=8.5;
+                }
 
-
-                const ystart=18.6;
-                doc.setFontSize(10);
+                doc.setFontSize(startFontSize);
+                doc.setFont("customFont","bold")
                 doc.text(gui[currentLang]["lg"], 10, ystart+ygap*8*u, 'left');
+                doc.setFont("customFont","normal")
                 doc.text("Pok\u00e9mon", 24, ystart+ygap*8*u, 'center');
                 doc.text(gui[currentLang]["teratype"], 22, ystart+ygap+ygap*8*u, 'center');
                 doc.text(gui[currentLang]["ability"], 22, ystart+ygap*2+ygap*8*u, 'center');
                 doc.setFontSize(9);
                 doc.text(gui[currentLang]['item'], 22, ystart+ygap*3+ygap*8*u,"center");
-                doc.setFontSize(10);
+                doc.setFontSize(startFontSize);
                 doc.text(gui[currentLang]['move']+" 1", 22, ystart+ygap*4+ygap*8*u,"center");
                 doc.text(gui[currentLang]['move']+" 2", 22, ystart+ygap*5+ygap*8*u,"center");
                 doc.text(gui[currentLang]['move']+" 3", 22, ystart+ygap*6+ygap*8*u,"center");
                 doc.text(gui[currentLang]['move']+" 4", 22, ystart+ygap*7+ygap*8*u,"center");
                 doc.setFont("customFont", 'normal');
 
-
+                
                 for (let i = 0; i < pokes.length; i++) {
                     var id = PokeTranslator[pokes[i].name];
-                    var pokeFontSize=10;
-                    var pokeTextWidth= doc.getStringUnitWidth(window['pokes' + currentLang][id])*10;
-                    while (pokeTextWidth>80) {
+                    var pokeFontSize=startFontSize;
+                    var pokeTextWidth= doc.getStringUnitWidth(window['pokes' + currentLang][id])*pokeFontSize;
+                    var limitTextWidth=72;
+                    if (u>=5) {
+                        limitTextWidth=70;
+                    }
+                    while (pokeTextWidth>limitTextWidth) {
                         pokeFontSize-=0.5;
                         doc.setFontSize(pokeFontSize);
                         pokeTextWidth= doc.getStringUnitWidth(window['pokes' + currentLang][id])*pokeFontSize;
                     }
-                    doc.text(window['pokes' + currentLang][id], 22+c_width*(i+1), ystart+8*ygap*u,"center");
-                    doc.setFontSize(10);
+                    if (u<5) {
+                        doc.text(window['pokes' + currentLang][id], 22+c_width*(i+1), ystart+8*ygap*u,"center");
+                    } else {
+                        doc.text(window['pokes' + currentLang][id], 22+c_width*(i+1), ystart+0.4+8*ygap*u,"center");
+                    }
+                    doc.setFontSize(startFontSize);
                     id = TypeTranslator[pokes[i].teraType];
                     doc.text(window['types' + currentLang][id], 22+c_width*(i+1), ystart+ygap+8*ygap*u,"center");
                     id = AbilityTranslator[pokes[i].ability];
-                    var abilityFontSize=10;
-                    var abilityTextWidth= doc.getStringUnitWidth(window['abilities' + currentLang][id])*10;
-                    while (abilityTextWidth>78) {
+                    var abilityFontSize=startFontSize;
+                    var abilityTextWidth= doc.getStringUnitWidth(window['abilities' + currentLang][id])*abilityFontSize;
+                    while (abilityTextWidth>limitTextWidth) {
                         abilityFontSize-=0.5;
                         doc.setFontSize(abilityFontSize);
                         abilityTextWidth= doc.getStringUnitWidth(window['abilities' + currentLang][id])*abilityFontSize;
                     }
                     doc.text(window['abilities' + currentLang][id], 22+c_width*(i+1), ystart+2*ygap+8*ygap*u,"center");
-                    doc.setFontSize(10);
+                    doc.setFontSize(startFontSize);
                     id = ItemTranslator[pokes[i].item];
-                    var itemFontSize=10;
-                    var itemTextWidth= doc.getStringUnitWidth(window['items' + currentLang][id])*10;
-                    while (itemTextWidth>78) {
+                    var itemFontSize=startFontSize;
+                    var itemTextWidth= doc.getStringUnitWidth(window['items' + currentLang][id])*itemFontSize;
+                    while (itemTextWidth>limitTextWidth) {
                         itemFontSize-=0.5;
                         doc.setFontSize(itemFontSize);
                         itemTextWidth= doc.getStringUnitWidth(window['items' + currentLang][id])*itemFontSize;
                     }
                     doc.text(window['items' + currentLang][id], 22+c_width*(i+1), ystart+3*ygap+8*ygap*u,"center");
-                    doc.setFontSize(10);
+                    doc.setFontSize(startFontSize);
                     for (let x = 0; x < pokes[i].moves.length; x++){
                         var moveId = MoveTranslator[pokes[i].moves[x]];
-                        var moveFontSize=10;
-                        var moveTextWidth= doc.getStringUnitWidth(window['moves' + currentLang][moveId])*10;
-                        while (moveTextWidth>78) {
+                        var moveFontSize=startFontSize;
+                        var moveTextWidth= doc.getStringUnitWidth(window['moves' + currentLang][moveId])*moveFontSize;
+                        while (moveTextWidth>limitTextWidth) {
                             moveFontSize-=0.5;
                             doc.setFontSize(moveFontSize);
                             moveTextWidth= doc.getStringUnitWidth(window['moves' + currentLang][moveId])*moveFontSize;
                         }
                         doc.text(window['moves' + currentLang][moveId], 22+c_width*(i+1), ystart+4*ygap+30.4*u+ygap*x,"center");
-                        doc.setFontSize(10);
+                        doc.setFontSize(startFontSize);
                     }
-
+    
                 }
             }
         }
