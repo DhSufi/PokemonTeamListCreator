@@ -978,7 +978,7 @@ var pokesEs = {
     "977_000": "Dondozo",
     "978_000": "Tatsugiri Forma Curvada",
     "978_001": "Tatsugiri Forma L\u00e1nguida",
-    "978_002": "Tatsugiri Forma Recta",
+    "978_002": "Tatsugiri Forma Recta ",
     "979_000": "Annihilape",
     "980_000": "Clodsire",
     "981_000": "Farigiraf",
