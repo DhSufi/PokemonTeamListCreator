@@ -1267,6 +1267,8 @@ var PokeTranslator = {
     "Veluza": "976_000",
     "Dondozo": "977_000",
     "Tatsugiri": "978_000",
+    "Tatsugiri-Droopy": "978_001",
+    "Tatsugiri-Stretchy": "978_002",
     "Annihilape": "979_000",
     "Clodsire": "980_000",
     "Farigiraf": "981_000",
