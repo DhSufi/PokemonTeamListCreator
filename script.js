@@ -59,6 +59,34 @@ function getStats(poke, ivs, evs, level, nat) {
 
 }
 
+/**
+ * Stat calculation in Champions with the new EVs system
+ * Pokemons are locked at level 50 and with max IVs so formula is way simpler
+ * 
+ * With Champions, HP gets +75 from base while other stats get +20
+ * Then we add the EVs
+ * Then apply nature (except for HP)
+ */
+function getChampionsStats(poke, evs, nat) {
+
+    var ret = { 'hp': 0, 'atk': 0, 'def': 0, 'spa': 0, 'spd': 0, 'spe': 0 };
+
+    var baseStats = pokedex[poke];
+    var nature = natures[nat];
+
+    for (const [key, value] of Object.entries(baseStats)) {
+        if (key == 'hp') {
+            var stat = baseStats.hp + 75 + evs.hp;
+            ret['hp'] = stat;
+        } else {
+            var stat = Math.floor((baseStats[key] + 20 + evs[key]) * nature[key]);
+            ret[key] = stat;
+        }
+    }
+
+    return ret
+}
+
 function sheetChange(event) {
 
     if (event.target.id == "reg"){
@@ -374,7 +402,7 @@ function generatePdf(element) {
             
 
             if (sheet == "close") {
-                var stats = getStats(pokes[i].name, ivs, evs, level, nature);
+                var stats = isChampions ? getChampionsStats(pokes[i].name, evs, nature) : getStats(pokes[i].name, ivs, evs, level, nature);
     
                 doc.text(level.toString(), statX + (i%2) * (gapX-1), levelY + (Math.floor(i/2)) * gapY, 'right');
     
