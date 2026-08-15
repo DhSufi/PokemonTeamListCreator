@@ -321,7 +321,7 @@ function generatePdf(element) {
 
             var nature = 'Serious';
             if (pokes[i].nature){
-                nature = captializeInput(pokes[i].nature);
+                nature = capitalizeInput(pokes[i].nature);
             }
 
             var level = 100;
