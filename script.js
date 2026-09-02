@@ -38,6 +38,12 @@ for (let i = 0; i < langs.length; i++) {
 const button = document.getElementById('print');
 const sheets = document.getElementsByName('sheet');
 
+// Helper function to allow for case insensitive inputs
+function capitalizeInput(str) {
+    if (!str) return "";
+    return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+}
+
 function getStats(poke, ivs, evs, level, nat) {
 
     var ret = {'hp': 0, 'atk': 0, 'def': 0, 'spa': 0, 'spd': 0, 'spe': 0};
@@ -315,7 +321,7 @@ function generatePdf(element) {
 
             var nature = 'Serious';
             if (pokes[i].nature){
-                nature = pokes[i].nature;
+                nature = capitalizeInput(pokes[i].nature);
             }
 
             var level = 100;
@@ -716,7 +722,7 @@ function generatePdf(element) {
                     }
                     doc.setFontSize(startFontSize);
                     if (isChampions) {
-                        var natId = NatureTranslator[pokes[i].nature];
+                        var natId = NatureTranslator[capitalizeInput(pokes[i].nature)];
                         doc.text(natId !== undefined ? (window['natures' + currentLang][natId] || '') : (pokes[i].nature || ''), 22+c_width*(i+1), ystart+ygap+8*ygap*u,"center");
                     } else {
                         id = TypeTranslator[pokes[i].teraType];
