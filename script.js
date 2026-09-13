@@ -410,8 +410,10 @@ function generatePdf(element) {
             if (sheet == "close") {
                 var stats = isChampions ? getChampionsStats(pokes[i].name, evs, nature) : getStats(pokes[i].name, ivs, evs, level, nature);
     
-                doc.text(level.toString(), statX + (i%2) * (gapX-1), levelY + (Math.floor(i/2)) * gapY, 'right');
-    
+                if (!isChampions) {
+                  doc.text(level.toString(), statX + (i%2) * (gapX-1), levelY + (Math.floor(i/2)) * gapY, 'right');
+                }
+
                 var j = 0;
                 for (const [key, value] of Object.entries(stats)){
                     doc.text(value.toString(), statX + (i%2) * (gapX-1), statY + (Math.floor(i/2)) * gapY + j * statGapY, 'right');
@@ -484,7 +486,9 @@ function generatePdf(element) {
             doc.line(x+80, y+12, x+80, y+68);
             doc.setFontSize(6);
             doc.setFont("text1", 'normal');
-            doc.text(x+81, y+14, "Level");
+            if (!isChampions) {
+              doc.text(x+81, y+14, "Level");
+            }
             doc.text(x+81, y+22, "HP");
             doc.text(x+81, y+30, "Atk");
             doc.text(x+81, y+38, "Def");
