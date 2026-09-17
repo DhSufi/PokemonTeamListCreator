@@ -348,6 +348,12 @@ function generatePdf(element) {
                 return;
             }
 
+
+            if (/.{1,}-Mega(-[XYZ]){0,1}/.test(pokes[i].name)) {
+              document.getElementById('error').innerText = `ERROR IN PASTE:\n${pokes[i].name} is a mega evolution!\nChange it to the base form, with a valid ability, holding a mega evolution stone.`;
+              return
+            }
+
             var name = window['pokes' + chosenLang][nameId];
             var teraType;
             if (isChampions) {
