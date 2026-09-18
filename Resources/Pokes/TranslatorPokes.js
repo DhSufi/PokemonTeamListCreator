@@ -1129,7 +1129,7 @@ var PokeTranslator = {
     "Obstagoon": "862_000",
     "Perrserker": "863_000",
     "Cursola": "864_000",
-    "Sirfetch\\u2019d": "865_000",
+    "Sirfetch’d": "865_000",
     "Mr. Rime": "866_000",
     "Runerigus": "867_000",
     "Milcery": "868_000",
