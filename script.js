@@ -10,6 +10,7 @@ document.getElementById('teamName').value = urlParams.get('team');
 document.getElementById('switchName').value = urlParams.get('switch');
 document.getElementById('playerId').value = urlParams.get('id');
 document.getElementById('birth').value = urlParams.get('dob');
+document.getElementById('supportId').value = urlParams.get('spid');
 if (urlParams.get('age')){
     document.getElementById(urlParams.get('age')).checked = true;
 }
