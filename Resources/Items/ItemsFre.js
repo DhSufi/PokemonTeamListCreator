@@ -1681,7 +1681,7 @@ var itemsFre = {
     "9034": "Heatranite",
     "9035": "Darkra\u00efte",
     "9036": "Golemastokite",
-    "9037": "Psiaugonit",
+    "9037": "Mistigrixite",
     "9038": "Crabominablite",
     "9039": "Sarmura\u00efte",
     "9040": "Magearnite",
