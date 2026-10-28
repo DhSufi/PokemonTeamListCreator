@@ -1681,7 +1681,7 @@ var itemsGer = {
     "9034": "Heatranit",
     "9035": "Darkrainit",
     "9036": "Golgantesnit",
-    "9037": "Mistigrixite",
+    "9037": "Psiaugonit",
     "9038": "Krawellonit",
     "9039": "Tectassnit",
     "9040": "Magearnanit",
