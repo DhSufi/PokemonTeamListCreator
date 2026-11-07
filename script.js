@@ -375,9 +375,9 @@ function generatePdf(element) {
             doc.setFont("customFont", 'normal');
             doc.text(name, textX + (i%2) * gapX, pokeY + (Math.floor(i/2)) * gapY);
             doc.text(nature, textX + (i%2) * gapX, teraY + (Math.floor(i/2)) * gapY);
-            doc.setFontSize(13);
+            doc.setFontSize(9);
             doc.setFont("text1", 'normal');
-            doc.text("Nature", textXX + (i%2) * gapX, teraY + (Math.floor(i/2)) * gapY, "right");
+            doc.text("Stat Alignment", textXX + (i%2) * gapX, teraY + (Math.floor(i/2)) * gapY, "right");
             doc.setFontSize(11);
             doc.setFont("customFont", 'normal');
 
