@@ -86,7 +86,7 @@ function getChampionsStats(poke, evs, nat) {
             var stat = baseStats.hp + 75 + evs.hp;
             ret['hp'] = stat;
         } else {
-            var stat = Math.floor((baseStats[key] + 20 + evs[key]) * nature[nat]);
+            var stat = Math.floor((baseStats[key] + 20 + evs[key]) * nature);
             ret[key] = stat;
         }
     }
