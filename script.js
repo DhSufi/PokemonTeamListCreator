@@ -10,7 +10,7 @@ class PdfGenerator {
         {family: "NotoSansSC", file: "NotoSansSC-Regular.ttf", style: "regular"},
         {family: "NotoSansSC", file: "NotoSansSC-Bold.ttf", style: "bold"},
         {family: "NotoSansJP", file: "NotoSansJP-Regular.ttf", style: "regular"},
-        {family: "NotoSansJP", file: "NotoSansJP-bold.ttf", style: "bold"},
+        {family: "NotoSansJP", file: "NotoSansJP-Bold.ttf", style: "bold"},
         {family: "NotoSansKR", file: "NotoSansKR-Regular.ttf", style: "regular"},
         {family: "NotoSansKR", file: "NotoSansKR-Bold.ttf", style: "bold"},
         {family: "NotoSans", file: "NotoSans-Regular.ttf", style: "regular"},
