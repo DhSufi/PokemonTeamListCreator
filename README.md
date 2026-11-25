@@ -40,9 +40,10 @@ Update July 2023:
   
 Pending: Special characters not allowed (for example ★)
 
-Libraries used:
+Libraries used, (thanks for your work):
 
-https://github.com/itsjavi/koffing
+https://github.com/smogon/pokemon-showdown/blob/master/sim/TEAMS.md
 
+https://github.com/projectpokemon/champout
 
 https://github.com/parallax/jsPDF
