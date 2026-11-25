@@ -30,7 +30,7 @@ Update December 2023:
   - switch=text
   - id=text
   - dob=text (recommended use -)
-  - age=Junior, Senior or Master
+  - age=junior, senior or master
   - lang=chs, cht, en, es, fre, ger, ita, jpn, jpnkanji or kor
   - spid=text support ID
 
