@@ -1,0 +1,202 @@
+{
+    "SEIKAKU_000": {
+        "hp": 1,
+        "atk": 1,
+        "def": 1,
+        "spa": 1,
+        "spd": 1,
+        "spe": 1
+    },
+    "SEIKAKU_001": {
+        "hp": 1,
+        "atk": 1.1,
+        "def": 0.9,
+        "spa": 1,
+        "spd": 1,
+        "spe": 1
+    },
+    "SEIKAKU_002": {
+        "hp": 1,
+        "atk": 1.1,
+        "def": 1,
+        "spa": 1,
+        "spd": 1,
+        "spe": 0.9
+    },
+    "SEIKAKU_003": {
+        "hp": 1,
+        "atk": 1.1,
+        "def": 1,
+        "spa": 0.9,
+        "spd": 1,
+        "spe": 1
+    },
+    "SEIKAKU_004": {
+        "hp": 1,
+        "atk": 1.1,
+        "def": 1,
+        "spa": 1,
+        "spd": 0.9,
+        "spe": 1
+    },
+    "SEIKAKU_005": {
+        "hp": 1,
+        "atk": 0.9,
+        "def": 1.1,
+        "spa": 1,
+        "spd": 1,
+        "spe": 1
+    },
+    "SEIKAKU_006": {
+        "hp": 1,
+        "atk": 1,
+        "def": 1,
+        "spa": 1,
+        "spd": 1,
+        "spe": 1
+    },
+    "SEIKAKU_007": {
+        "hp": 1,
+        "atk": 1,
+        "def": 1.1,
+        "spa": 1,
+        "spd": 1,
+        "spe": 0.9
+    },
+    "SEIKAKU_008": {
+        "hp": 1,
+        "atk": 1,
+        "def": 1.1,
+        "spa": 0.9,
+        "spd": 1,
+        "spe": 1
+    },
+    "SEIKAKU_009": {
+        "hp": 1,
+        "atk": 1,
+        "def": 1.1,
+        "spa": 1,
+        "spd": 0.9,
+        "spe": 1
+    },
+    "SEIKAKU_010": {
+        "hp": 1,
+        "atk": 0.9,
+        "def": 1,
+        "spa": 1,
+        "spd": 1,
+        "spe": 1.1
+    },
+    "SEIKAKU_011": {
+        "hp": 1,
+        "atk": 1,
+        "def": 0.9,
+        "spa": 1,
+        "spd": 1,
+        "spe": 1.1
+    },
+    "SEIKAKU_012": {
+        "hp": 1,
+        "atk": 1,
+        "def": 1,
+        "spa": 1,
+        "spd": 1,
+        "spe": 1
+    },
+    "SEIKAKU_013": {
+        "hp": 1,
+        "atk": 1,
+        "def": 1,
+        "spa": 0.9,
+        "spd": 1,
+        "spe": 1.1
+    },
+    "SEIKAKU_014": {
+        "hp": 1,
+        "atk": 1,
+        "def": 1,
+        "spa": 1,
+        "spd": 0.9,
+        "spe": 1.1
+    },
+    "SEIKAKU_015": {
+        "hp": 1,
+        "atk": 0.9,
+        "def": 1,
+        "spa": 1.1,
+        "spd": 1,
+        "spe": 1
+    },
+    "SEIKAKU_016": {
+        "hp": 1,
+        "atk": 1,
+        "def": 0.9,
+        "spa": 1.1,
+        "spd": 1,
+        "spe": 1
+    },
+    "SEIKAKU_017": {
+        "hp": 1,
+        "atk": 1,
+        "def": 1,
+        "spa": 1.1,
+        "spd": 1,
+        "spe": 0.9
+    },
+    "SEIKAKU_018": {
+        "hp": 1,
+        "atk": 1,
+        "def": 1,
+        "spa": 1,
+        "spd": 1,
+        "spe": 1
+    },
+    "SEIKAKU_019": {
+        "hp": 1,
+        "atk": 1,
+        "def": 1,
+        "spa": 1.1,
+        "spd": 0.9,
+        "spe": 1
+    },
+    "SEIKAKU_020": {
+        "hp": 1,
+        "atk": 0.9,
+        "def": 1,
+        "spa": 1,
+        "spd": 1.1,
+        "spe": 1
+    },
+    "SEIKAKU_021": {
+        "hp": 1,
+        "atk": 1,
+        "def": 0.9,
+        "spa": 1,
+        "spd": 1.1,
+        "spe": 1
+    },
+    "SEIKAKU_022": {
+        "hp": 1,
+        "atk": 1,
+        "def": 1,
+        "spa": 1,
+        "spd": 1.1,
+        "spe": 0.9
+    },
+    "SEIKAKU_023": {
+        "hp": 1,
+        "atk": 1,
+        "def": 1,
+        "spa": 0.9,
+        "spd": 1.1,
+        "spe": 1
+    },
+    "SEIKAKU_024": {
+        "hp": 1,
+        "atk": 1,
+        "def": 1,
+        "spa": 1,
+        "spd": 1,
+        "spe": 1
+    }
+}
